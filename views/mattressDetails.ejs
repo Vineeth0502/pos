@@ -1,0 +1,170 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+<div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 gap-8">
+      <div class="flex flex-col space-y-4">
+        <div class="bg-[url('/placeholder.svg?height=400&amp;width=600')] bg-cover bg-no-repeat h-96 w-full"></div>
+        <div class="flex justify-between space-x-4">
+          <div class="flex items-center">
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-yellow-400 w-5 h-5"
+            >
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-yellow-400 w-5 h-5"
+            >
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-gray-300 w-5 h-5"
+            >
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col space-y-6">
+        <h1 class="text-2xl font-bold"><%= mattressDetails.mattress_name %> </h1>
+        <ul class="list-disc space-y-2 pl-5 text-sm">
+            <p class=""><%= mattressDetails.mattress_description %> </p>
+
+          <li>DIY Unboxing</li>
+          <li>Soft &amp; Firm Sides</li>
+          <li>Reversible</li>
+          <li>Triple Anti Microbial Fabric</li>
+          <li>5 Years Warranty</li>
+        </ul>
+        <div class="space-y-2">
+          <div class="text-lg font-semibold">
+            Selling Price : <span class="text-red-600">₹ <%= mattressDetails.mattress_price %></span>
+            <span class="text-sm line-through text-gray-500">M.R.P: ₹ 9,372</span>
+          </div>
+          <div class="text-sm text-green-600">32% off You Save ₹ 3,003</div>
+          <div class="text-sm">
+            Get it as low as <span class="text-red-600">₹ 5,732.10</span> using coupon SAVEBIG offer{" "}
+            <a href="#" class="text-blue-600 underline">
+              *T&amp;C Apply.
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <button
+            type="button"
+            role="combobox"
+            aria-controls="radix-:r4h:"
+            aria-expanded="false"
+            aria-autocomplete="none"
+            dir="ltr"
+            data-state="closed"
+            data-placeholder=""
+            class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="size"
+          >
+            <span style="pointer-events: none;"><%= mattressDetails.type %></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4 opacity-50"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+          <button
+            type="button"
+            role="combobox"
+            aria-controls="radix-:r4i:"
+            aria-expanded="false"
+            aria-autocomplete="none"
+            dir="ltr"
+            data-state="closed"
+            data-placeholder=""
+            class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="dimension"
+          >
+            <span style="pointer-events: none;">72 X 30</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4 opacity-50"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+          <button
+            type="button"
+            role="combobox"
+            aria-controls="radix-:r4j:"
+            aria-expanded="false"
+            aria-autocomplete="none"
+            dir="ltr"
+            data-state="closed"
+            data-placeholder=""
+            class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="height"
+          >
+            <span style="pointer-events: none;">5 (12.7 cm)</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4 opacity-50"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
